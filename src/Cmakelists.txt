@@ -1,0 +1,26 @@
+cmake_minimum_required(VERSION 3.31.1)
+project(App)
+
+set(SOURCES main.cpp)
+
+include_directories(${CMAKE_BINARY_DIR}/include)
+
+add_executable(app ${SOURCES})
+
+add_dependencies(app ComplexMath)
+
+target_link_libraries(app ComplexMath)
+
+add_custom_command(
+    TARGET app POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        $<TARGET_FILE:ComplexMath> $<TARGET_FILE_DIR:app>
+)
+
+install(TARGETS app
+        COMPONENT app
+        DESTINATION bin)
+
+install(FILES app.1
+        COMPONENT app
+        DESTINATION share/man/man1)

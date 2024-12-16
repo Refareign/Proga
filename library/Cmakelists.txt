@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.31.1)
+project(ComplexMathLibrary)
+
+set(SOURCES complexmath.cpp)
+set(HEADERS complex_math.h)
+
+add_library(ComplexMath SHARED ${SOURCES})
+
+target_include_directories(ComplexMath PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+target_compile_definitions(ComplexMath PRIVATE COMPLEXMATH_EXPORTS)
+
+# Установка компонентов
+install(TARGETS ComplexMath
+        COMPONENT library
+        DESTINATION lib)

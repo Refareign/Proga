@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 3.31.1)
+project(ComplexMathProject)
+# Добавление подпроектов
+add_subdirectory(library)
+add_subdirectory(src)
+# Основные настройки пакета
+set(CPACK_PACKAGE_NAME "ComplexMathProject")
+set(CPACK_PACKAGE_VERSION "1.0.0")
+set(CPACK_PACKAGE_CONTACT "bim-bim-bam-bam@lmao.com")
+set(CPACK_PACKAGE_VENDOR "Bimbim or Bambam")
+set(CPACK_PACKAGE_DESCRIPTION "ComplexMath Project")
+set(CPACK_DEBIAN_PACKAGE_ARCHITECTURE "amd64")
+set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Zip-file <bimbim-bam-bam@gmail.com>")
+# Определение компонентов
+set(CPACK_COMPONENTS_ALL app library dev)
+# Компонент: Программа
+set(CPACK_COMPONENT_APP_DISPLAY_NAME "ComplexMath Application")
+set(CPACK_COMPONENT_APP_DESCRIPTION "Main application for ComplexMath Project")
+set(CPACK_COMPONENT_APP_DEPENDS library)
+# Компонент: Основной пакет библиотеки
+set(CPACK_COMPONENT_LIBRARY_DISPLAY_NAME "ComplexMath Library")
+set(CPACK_COMPONENT_LIBRARY_DESCRIPTION "Shared library for ComplexMath Project")
+# Компонент: Пакет разработчика библиотеки
+set(CPACK_COMPONENT_DEV_DISPLAY_NAME "ComplexMath Development Files")
+set(CPACK_COMPONENT_DEV_DESCRIPTION "Header files for developing with ComplexMath Library")
+set(CPACK_DEB_COMPONENT_INSTALL ON)
+# Подключение CPack
+include(CPack)
