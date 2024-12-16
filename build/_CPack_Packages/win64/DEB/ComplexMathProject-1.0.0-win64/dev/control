@@ -1,0 +1,9 @@
+Architecture: amd64
+Description: Header files for developing with ComplexMath Library
+Maintainer: Zip-file <bimbim-bam-bam@gmail.com>
+Package: complexmathproject-dev
+Priority: optional
+Section: devel
+Version: 1.0.0
+Installed-Size: 0
+

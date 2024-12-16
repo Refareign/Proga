@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Games\Proga\build\CMakeFiles\41c76e417e7b924e2f03caa60f8f1ba2\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4FEE0AAE-61F1-3F3B-AEE5-17B04DF19084}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+Architecture: amd64
+Description: Main application for ComplexMath Project
+Maintainer: Zip-file <bimbim-bam-bam@gmail.com>
+Package: complexmathproject-app
+Priority: optional
+Section: devel
+Version: 1.0.0
+Installed-Size: 28
+

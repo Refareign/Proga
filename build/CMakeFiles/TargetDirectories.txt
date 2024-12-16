@@ -1,0 +1,12 @@
+C:/Games/Proga/build/CMakeFiles/PACKAGE.dir
+C:/Games/Proga/build/CMakeFiles/INSTALL.dir
+C:/Games/Proga/build/CMakeFiles/ALL_BUILD.dir
+C:/Games/Proga/build/CMakeFiles/ZERO_CHECK.dir
+C:/Games/Proga/build/library/CMakeFiles/ComplexMath.dir
+C:/Games/Proga/build/library/CMakeFiles/PACKAGE.dir
+C:/Games/Proga/build/library/CMakeFiles/INSTALL.dir
+C:/Games/Proga/build/library/CMakeFiles/ALL_BUILD.dir
+C:/Games/Proga/build/src/CMakeFiles/app.dir
+C:/Games/Proga/build/src/CMakeFiles/PACKAGE.dir
+C:/Games/Proga/build/src/CMakeFiles/INSTALL.dir
+C:/Games/Proga/build/src/CMakeFiles/ALL_BUILD.dir
